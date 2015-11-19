@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top"
+        android:gravity="center_vertical">
+
+        <ProgressBar
+            android:id="@+id/pb_loading"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/loading_circular" />
+
+        <TextView
+            android:id="@+id/tv_numbers"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text=""
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/xlarge_space"
+            android:layout_marginStart="@dimen/xlarge_space"
+            android:gravity="center"
+            android:text="@string/left_member"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_left_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/pb_loading"
+            android:layout_toStartOf="@id/pb_loading"
+            android:layout_toRightOf="@id/tv_left"
+            android:layout_toEndOf="@id/tv_left"
+            android:gravity="center"
+            android:text=""
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/xlarge_space"
+            android:layout_marginRight="@dimen/xlarge_space"
+            android:gravity="right"
+            android:text="@string/right_member"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_right_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/pb_loading"
+            android:layout_toLeftOf="@id/tv_right"
+            android:layout_toRightOf="@id/pb_loading"
+            android:layout_toStartOf="@id/tv_right"
+            android:gravity="center"
+            android:text=""
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_left_member"
+            android:layout_width="40dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_left_member"
+                android:layout_width="@dimen/width_color_bar"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@color/indigo" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_right_member"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/tv_right_member"
+                android:layout_width="@dimen/width_color_bar"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@color/blue" />
+        </RelativeLayout>
+
+        <GridView
+            android:id="@+id/gv_numbers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:gravity="center"
+            android:horizontalSpacing="@dimen/small_space"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="@dimen/small_space" />
+    </RelativeLayout>
+</LinearLayout>

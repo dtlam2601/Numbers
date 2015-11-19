@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Numbers</string>
+    <string name="left_number">Left Number</string>
+    <string name="right_number">Right Number</string>
+    <string name="number">25</string>
+    <string name="the_left">The Left</string>
+    <string name="the_right">The Right</string>
+    <string name="shared_pref">shared_pref_numbers_game</string>
+    <string name="key_is_first">key_is_first</string>
+    <string name="key_color_1">key_color_1</string>
+    <string name="key_color_2">key_color_2</string>
+    <string name="key_color_1_default">0</string>
+    <string name="key_color_2_default">1</string>
+    <string name="number_picker_title">Picker a number</string>
+    <string name="number_picker_message"></string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="restart">Restart Game</string>
+    <string name="msg_player1">Player 1 goal %1$s points!</string>
+    <string name="msg_player2">Player 2 goal %1$s points!</string>
+    <string name="goals_count">%1$d</string>
+
+    <string name="np_min">50</string>
+    <string name="np_max">100</string>
+    <string name="left_member">Left</string>
+    <string name="right_member">Right</string>
+    <string name="choice_color_left">Choice Color for Left Member</string>
+    <string name="choice_color_right">Choice Color for Right Member</string>
+    <!-- array number picker-->
+    <string-array name="numbers_picker">
+        <item>50</item>
+        <item>60</item>
+        <item>70</item>
+        <item>80</item>
+        <item>90</item>
+        <item>100</item>
+    </string-array>
+</resources>
